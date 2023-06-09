@@ -55,13 +55,13 @@
 	</style>
 	
 	<div class="paging">
-		<% if (currentPage > 1) {%>
+		<% if (currentPage > 1) { %>
 			<a href="list?page=1">◀</a>
 		<% } %>
 		<% for(int i = from; i <= end; i++) { %>
 			<a class="<%= currentPage == i ? "red" : "" %>" href="list?page=<%= i %>"><%= i %></a>
 		<% } %>
-		<% if (currentPage < totalPage) {%>
+		<% if (currentPage < totalPage) { %>
 			<a href="list?page=<%= totalPage %>">▶</a>
 		<% } %>
 	</div>
